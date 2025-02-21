@@ -15,7 +15,7 @@ NSAT:
 WPAState:
   datatype: string
   type: sensor
-  description: Indicate the current WPA state for the device's wifi
+s  description: Indicate the current WPA state for the device's wifi, e.g. "CONNECTED", "SCANNING", "DISCONNECTED"
 
 SSID:
   datatype: string
@@ -25,6 +25,7 @@ SSID:
 GSMUMTSSignalLevel:
   type: sensor
   datatype: float
+  unit: dBm
   description: Device network signal level
 
 Power:
@@ -34,6 +35,7 @@ Power:
 Power.BatteryVoltage:
   type: sensor
   datatype: float
+  unit: V
   description: Device onboard battery voltage
 
 ECO:
@@ -58,6 +60,7 @@ ECO.HarshAccelerationCounter:
 ECO.IdlingTimer:
   type: sensor
   datatype: float
+  unit: s
   description: Length of time vehicle engine was idling since last start up
 
 ECO.IdlingEvent:
