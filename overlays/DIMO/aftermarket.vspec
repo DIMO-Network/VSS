@@ -22,7 +22,7 @@ SSID:
   type: sensor
   description: Service Set Identifier for the wifi.
 
-GsmUmtsSignalLevel:
+GSMUMTSSignalLevel:
   type: sensor
   datatype: float
   description: Device network signal level
