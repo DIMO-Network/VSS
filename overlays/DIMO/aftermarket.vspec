@@ -1,4 +1,4 @@
-# cell provides fields related to dimo device's cellular signal.
+# Overlay providing signals for DIMO aftermarket devices
 # Dependencies to other overlays: None
 # Known conflicts with other overlays: None
 #
