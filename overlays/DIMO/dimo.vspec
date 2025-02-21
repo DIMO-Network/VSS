@@ -70,4 +70,4 @@ Vehicle.Powertrain.TractionBattery.Charging.AddedEnergy:
 Vehicle.IgnitionStatus:
   type: sensor
   datatype: boolean
-  description: Vehicle ignition status on/off
+  description: Vehicle ignition status. False - off, True - on.
