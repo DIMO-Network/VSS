@@ -13,7 +13,7 @@ Vehicle.DIMO:
 Vehicle.DIMO.Aftermarket:
   type: branch
   description: holds information about the aftermarket dimo device
-#include cell.vspec Vehicle.DIMO.Aftermarket
+#include aftermarket.vspec Vehicle.DIMO.Aftermarket
 
 
 Vehicle.DIMO.Subject:
@@ -66,3 +66,8 @@ Vehicle.Powertrain.TractionBattery.Charging.AddedEnergy:
   datatype: float
   unit: kWh
   description: Amount of charge added to the high voltage battery during the current charging session, expressed in kilowatt-hours.
+
+Vehicle.IsIgnitionOn:
+  type: sensor
+  datatype: boolean
+  description: Vehicle ignition status. False - off, True - on.

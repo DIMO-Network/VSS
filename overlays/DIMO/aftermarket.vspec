@@ -1,0 +1,99 @@
+# Overlay providing signals for DIMO aftermarket devices
+# Dependencies to other overlays: None
+# Known conflicts with other overlays: None
+#
+HDOP:
+  datatype: float
+  type: sensor
+  description: Horizontal dilution of precision of GPS
+
+NSAT:
+  datatype: float
+  type: sensor
+  description: Number of sync satellites for GPS
+
+WPAState:
+  datatype: string
+  type: sensor
+  description: Indicate the current WPA state for the device's wifi, e.g. "CONNECTED", "SCANNING", "DISCONNECTED"
+
+SSID:
+  datatype: string
+  type: sensor
+  description: Service Set Identifier for the wifi.
+
+GSMUMTSSignalLevel:
+  type: sensor
+  datatype: float
+  unit: dBm
+  description: Device network signal level
+
+Power:
+  type: branch
+  description: device power status
+
+Power.BatteryVoltage:
+  type: sensor
+  datatype: float
+  unit: V
+  description: Device onboard battery voltage
+
+ECO:
+  type: branch
+  description: ruptela events aggregated
+
+ECO.BrakeCounter:
+  type: sensor
+  datatype: float
+  description: Brake event counter
+
+ECO.HarshBrakeCounter:
+  type: sensor
+  datatype: float
+  description: Harsh brake event counter
+
+ECO.HarshAccelerationCounter:
+  type: sensor
+  datatype: float
+  description: Harsh acceleration event counter
+
+ECO.IdlingTimer:
+  type: sensor
+  datatype: float
+  unit: s
+  description: Length of time vehicle engine was idling since last start up
+
+ECO.IdlingEvent:
+  type: sensor
+  datatype: float
+  description: Vehicle idling
+
+MovementSensor:
+  type: sensor
+  datatype: float
+  description: Vehicle movement detected
+
+ECO.BrakingValue:
+  type: sensor
+  datatype: float
+  description: Braking value
+
+ECO.AccelerationValue:
+  type: sensor
+  datatype: float
+  description: Acceleration value
+
+ECO.CorneringValue:
+  type: sensor
+  datatype: float
+  description: Cornering value
+
+UnplugDetection:
+  type: sensor
+  datatype: float
+  description: device unplug detection
+
+CurrentLTEBand:
+  type: sensor
+  datatype: float
+  description: Current LTE band
