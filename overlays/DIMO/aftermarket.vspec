@@ -15,7 +15,7 @@ NSAT:
 WPAState:
   datatype: string
   type: sensor
-s  description: Indicate the current WPA state for the device's wifi, e.g. "CONNECTED", "SCANNING", "DISCONNECTED"
+  description: Indicate the current WPA state for the device's wifi, e.g. "CONNECTED", "SCANNING", "DISCONNECTED"
 
 SSID:
   datatype: string
