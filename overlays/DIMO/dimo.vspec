@@ -67,3 +67,7 @@ Vehicle.Powertrain.TractionBattery.Charging.AddedEnergy:
   unit: kWh
   description: Amount of charge added to the high voltage battery during the current charging session, expressed in kilowatt-hours.
 
+Vehicle.IgnitionStatus:
+  type: sensor
+  datatype: boolean
+  description: Vehicle ignition status on/off

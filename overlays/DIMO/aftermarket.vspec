@@ -30,7 +30,7 @@ GsmUmtsSignalLevel:
 Power:
   type: branch
   description: device power status
-  
+
 Power.BatteryVoltage:
   type: sensor
   datatype: float
@@ -53,7 +53,7 @@ ECO.HarshBrakeCounter:
 ECO.HarshAccelerationCounter:
   type: sensor
   datatype: float
-  description: Harsh acceleration event counter  
+  description: Harsh acceleration event counter
 
 ECO.IdlingTimer:
   type: sensor
@@ -85,11 +85,6 @@ ECO.CorneringValue:
   datatype: float
   description: Cornering value
 
-VehicleIgnitionStatus:
-  type: sensor
-  datatype: float
-  description: Vehicle ignition status 
-
 UnplugDetection:
   type: sensor
   datatype: float
@@ -98,4 +93,4 @@ UnplugDetection:
 CurrentLTEBand:
   type: sensor
   datatype: float
-  description: Current LTE band  
+  description: Current LTE band
