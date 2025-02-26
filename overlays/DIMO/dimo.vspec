@@ -86,9 +86,3 @@ Vehicle.Powertrain.TractionBattery.Charging.AddedEnergyAC:
   datatype: float
   unit: kWh
   description: Amount of charge added to the high voltage battery during the current charging session via AC (alternating current), expressed in kilowatt-hours.
-
-Vehicle.Powertrain.TractionBattery.Charging.AddedEnergyDC:
-  type: sensor
-  datatype: float
-  unit: kWh
-  description: Amount of charge added to the high voltage battery during the current charging session via DC (direct current), expressed in kilowatt-hours.
