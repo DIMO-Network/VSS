@@ -67,28 +67,81 @@ Vehicle.Powertrain.TractionBattery.Charging.AddedEnergy:
   unit: kWh
   description: Amount of charge added to the high voltage battery during the current charging session, expressed in kilowatt-hours.
 
-Vehicle.Powertrain.TractionBattery.Charging.CurrentPowerAC:
-  datatype: float
-  type: sensor
-  unit: W
-  description: Current electrical energy via AC (alternating current) flowing in/out of battery. Positive = Energy flowing in to battery, e.g. during charging.
-               Negative = Energy flowing out of battery, e.g. during driving.
 
-Vehicle.Powertrain.TractionBattery.Charging.CurrentPowerDC:
+Vehicle.Powertrain.TractionBattery.Charging.ChargeCurrent.AllPhases:
   datatype: float
   type: sensor
-  unit: W
-  description: Current electrical energy via DC (direct current) flowing in/out of battery. Positive = Energy flowing in to battery, e.g. during charging.
-               Negative = Energy flowing out of battery, e.g. during driving.
+  unit: A
+  description: Current AC charging current (rms) at inlet. Negative if returning energy to grid.
 
-Vehicle.Powertrain.TractionBattery.Charging.AddedEnergyAC:
-  type: sensor
+Vehicle.ADAS.CruiseControl.CruiseFollowTime:
   datatype: float
-  unit: kWh
-  description: Amount of charge added to the high voltage battery during the current charging session via AC (alternating current), expressed in kilowatt-hours.
+  type: actuator
+  description: Tesla cruise follow distance seems to be directly proportional to time, but is not seconds
 
-Vehicle.Powertrain.TractionBattery.Charging.AddedEnergyDC:
-  type: sensor
+Vehicle.VehicleIdentification.Model.MaxSpeedAllowed:
   datatype: float
-  unit: kWh
-  description: Amount of charge added to the high voltage battery during the current charging session via DC (direct current), expressed in kilowatt-hours.
+  type: actuator
+  unit: km/h
+  description: Max speed the vehicle can achieve while Speed Limit Mode is active
+
+Vehicle.ADAS.ObstacleDetection.Forward.Setting:
+  datatype: string
+  type: actuator
+  description: Forward collision warning settings, possible values are 'Average', 'Early', 'Late', 'Default', and 'Off'
+
+Vehicle.GuestModeEnabled:
+  datatype: boolean
+  type: actuator
+  description: Whether Guest Mode is enabled in the vehicle, true if Guest Mode is active, false otherwise
+
+Vehicle.Powertrain.IdealRange:
+  datatype: float
+  type: sensor
+  unit: km
+  description: Remaining ideal range in meters using only battery.
+
+Vehicle.ADAS.LaneDepartureDetection.Level:
+  datatype: string
+  type: actuator
+  description: The level of Lane Departure Detection, possible values are 'Assist', 'None', 'Warning', and 'Default'
+
+Vehicle.VehicleIdentification.Trim:
+  datatype: string
+  type: attribute
+  description: Trim level of the vehicle
+
+Vehicle.VehicleIdentification.VehicleName:
+  datatype: string
+  type: attribute
+  description: Name of the vehicle, as specified by the driver 
+
+Vehicle.VehicleIdentification.VehicleSoftwareVersion:
+  datatype: string
+  type: attribute
+  description: The version of the software running on the vehicle
+
+Vehicle.Powertrain.TractionBattery.Charging.IsFastChargingCableConnected:
+  datatype: boolean
+  type: sensor
+  description: Indicates if a fast charging cable is physically connected to the vehicle or not.	
+
+Vehicle.ADAS.ObstacleDetection.BlindSpot.IsEnabled:
+  datatype: boolean
+  type: actuator
+  description: Indicates if obstacle sensor system is enabled (i.e. monitoring for obstacles). True = Enabled. False = Disabled.	
+
+Vehicle.ADAS.SpeedLimitWarning:
+  datatype: string
+  type: actuator
+  description: State of the Speed Limit Warning system, possible values are 'Display', 'None', 'Chime', 'Default'
+
+Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.ChargeVoltage:
+  datatype: float
+  type: sensor
+  description: Current charging voltage from AC or DC input, as measured at the charging inlet.
+
+Vehicle.VehicleIdentification.VehicleSoftwareUpdateVersion:
+  datatype: string
+  type: attribute
+  description: The version of the software that is to be installed at the next update
