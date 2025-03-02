@@ -67,7 +67,6 @@ Vehicle.Powertrain.TractionBattery.Charging.AddedEnergy:
   unit: kWh
   description: Amount of charge added to the high voltage battery during the current charging session, expressed in kilowatt-hours.
 
-
 Vehicle.Powertrain.TractionBattery.Charging.ChargeCurrent.AllPhases:
   datatype: float
   type: sensor
@@ -87,6 +86,7 @@ Vehicle.VehicleIdentification.Model.MaxSpeedAllowed:
 
 Vehicle.ADAS.ObstacleDetection.Forward.Setting:
   datatype: string
+  allowed: ['Average', 'Early', 'Late', 'Default', 'Off']
   type: actuator
   description: Forward collision warning settings, possible values are 'Average', 'Early', 'Late', 'Default', and 'Off'
 
@@ -103,6 +103,7 @@ Vehicle.Powertrain.IdealRange:
 
 Vehicle.ADAS.LaneDepartureDetection.Level:
   datatype: string
+  allowed: ['Assist', 'None', 'Warning', 'Default']
   type: actuator
   description: The level of Lane Departure Detection, possible values are 'Assist', 'None', 'Warning', and 'Default'
 
@@ -133,6 +134,7 @@ Vehicle.ADAS.ObstacleDetection.BlindSpot.IsEnabled:
 
 Vehicle.ADAS.SpeedLimitWarning:
   datatype: string
+  allowed: ['Display', 'None', 'Chime', 'Default']
   type: actuator
   description: State of the Speed Limit Warning system, possible values are 'Display', 'None', 'Chime', 'Default'
 
