@@ -78,7 +78,7 @@ Vehicle.ADAS.CruiseControl.CruiseFollowTime:
   type: actuator
   description: Tesla cruise follow distance seems to be directly proportional to time, but is not seconds
 
-Vehicle.VehicleIdentification.Model.MaxSpeedAllowed:
+Vehicle.MaxSpeedAllowed:
   datatype: float
   type: actuator
   unit: km/h
