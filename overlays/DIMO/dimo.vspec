@@ -95,7 +95,7 @@ Vehicle.GuestModeEnabled:
   type: actuator
   description: Whether Guest Mode is enabled in the vehicle, true if Guest Mode is active, false otherwise
 
-Vehicle.Powertrain.IdealRange:
+Vehicle.Powertrain.TractionBattery.IdealRange:
   datatype: float
   type: sensor
   unit: km
@@ -130,7 +130,7 @@ Vehicle.Powertrain.TractionBattery.Charging.IsFastChargingCableConnected:
 Vehicle.ADAS.ObstacleDetection.BlindSpot.IsEnabled:
   datatype: boolean
   type: actuator
-  description: Indicates if obstacle sensor system is enabled (i.e. monitoring for obstacles). True = Enabled. False = Disabled.	
+  description: Indicates if a blind spot obstacle sensor system is enabled (i.e. monitoring for obstacles). True = Enabled. False = Disabled.	
 
 Vehicle.ADAS.SpeedLimitWarning:
   datatype: string
