@@ -73,8 +73,8 @@ Vehicle.IsIgnitionOn:
   description: Vehicle ignition status. False - off, True - on.
 
 Vehicle.Powertrain.TractionBattery.Charging.ChargeCurrent.AC:
-  type: sensor
   datatype: float
+  type: sensor
   unit: A
   description: Current AC charging current (rms) at inlet. Negative if returning energy to grid. Used when per-phase numbers are unavailable.
 
