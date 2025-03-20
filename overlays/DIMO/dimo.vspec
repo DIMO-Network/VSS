@@ -82,4 +82,4 @@ Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.UnknownType:
   datatype: float
   type: sensor
   unit: V
-  description: Current charging voltage at inlet. Used when the source does not distinguish between AC and DC voltage.
+  description: Current charging voltage at inlet. Used when the source does not indicate which type of current (AC or DC) is being used.
