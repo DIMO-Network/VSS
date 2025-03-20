@@ -78,7 +78,7 @@ Vehicle.Powertrain.TractionBattery.Charging.ChargeCurrent.AC:
   unit: A
   description: Current AC charging current (rms) at inlet. Negative if returning energy to grid. Used when per-phase numbers are unavailable.
 
-Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.Actual:
+Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.UnknownType:
   datatype: float
   type: sensor
   unit: V
