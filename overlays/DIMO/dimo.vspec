@@ -67,12 +67,6 @@ Vehicle.Powertrain.TractionBattery.Charging.AddedEnergy:
   unit: kWh
   description: Amount of charge added to the high voltage battery during the current charging session, expressed in kilowatt-hours.
 
-Vehicle.Powertrain.TractionBattery.Charging.ChargeCurrent.AC:
-  datatype: float
-  type: sensor
-  unit: A
-  description: Current AC charging current (rms) at inlet. Negative if returning energy to grid.
-
 Vehicle.ADAS.CruiseControl.CruiseFollowTime:
   datatype: float
   type: actuator
@@ -137,11 +131,6 @@ Vehicle.ADAS.SpeedLimitWarning:
   allowed: ['DISPLAY', 'NONE', 'CHIME', 'DEFAULT']
   type: actuator
   description: State of the Speed Limit Warning system, possible values are 'Display', 'None', 'Chime', 'Default'
-
-Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.ChargeVoltage:
-  datatype: float
-  type: sensor
-  description: Current charging voltage from AC or DC input, as measured at the charging inlet.
 
 Vehicle.VehicleIdentification.VehicleSoftwareUpdateVersion:
   datatype: string
