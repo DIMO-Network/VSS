@@ -47,6 +47,16 @@ ECO.BrakeCounter:
   datatype: float
   description: Brake event counter
 
+ECO.CorneringCounter:
+  type: sensor
+  datatype: float
+  description: Cornering counter
+
+ECO.ExtremeBrakeCounter:
+  type: sensor
+  datatype: float
+  description: Extreme brake event counter
+
 ECO.HarshBrakeCounter:
   type: sensor
   datatype: float
