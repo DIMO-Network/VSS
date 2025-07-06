@@ -57,8 +57,8 @@ RelativeLevel:
 Range:
   datatype: uint32
   type: sensor
-  unit: m
-  description: Remaining range in meters using only liquid fuel.
+  unit: km
+  description: Remaining range in kilometers using only liquid fuel.
 
 TimeRemaining:
   datatype: uint32

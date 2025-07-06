@@ -223,8 +223,8 @@ PowerLoss:
 Range:
   datatype: uint32
   type: sensor
-  unit: m
-  description: Remaining range in meters using only battery.
+  unit: km
+  description: Remaining range in kilometers using only battery.
 
 TimeRemaining:
   datatype: uint32
