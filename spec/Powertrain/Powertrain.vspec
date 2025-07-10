@@ -15,8 +15,8 @@ AccumulatedBrakingEnergy:
 Range:
   datatype: uint32
   type: sensor
-  unit: m
-  description: Remaining range in meters using all energy sources available in the vehicle.
+  unit: km
+  description: Remaining range in kilometers using all energy sources available in the vehicle.
 
 TimeRemaining:
   datatype: uint32
