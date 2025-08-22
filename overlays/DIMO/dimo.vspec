@@ -15,6 +15,10 @@ Vehicle.DIMO.Aftermarket:
   description: holds information about the aftermarket dimo device
 #include aftermarket.vspec Vehicle.DIMO.Aftermarket
 
+Vehicle.CurrentLocation.Coordinates:
+  type: sensor
+  datatype: Types.DIMO.Coordinates
+  description: Current location of the vehicle in WGS 84 coordinates.
 
 Vehicle.DIMO.Subject:
   type: sensor

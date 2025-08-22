@@ -1,0 +1,34 @@
+Types:
+  type: branch
+  description: Type definitions
+
+Types.DIMO:
+  type: branch
+  description: DIMO-specific types
+
+Types.DIMO.Coordinates:
+  type: struct
+  description: A struct datatype representing GNSS position.
+
+Types.DIMO.Coordinates.Latitude:
+  datatype: double
+  type: property
+  min: -90
+  max: 90
+  unit: degrees
+  description: Latitude in WGS 84 coordinates.
+
+Types.DIMO.Coordinates.Longitude:
+  datatype: double
+  type: property
+  min: -180
+  max: 180
+  unit: degrees
+  description: Longitude in WGS 84 coordinates.
+
+Types.DIMO.Coordinates.HDOP:
+  datatype: double
+  type: property
+  min: 0
+  unit: ratio
+  description: Horizontal dilution of position. May be zero if this was not measured.
