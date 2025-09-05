@@ -479,12 +479,6 @@ Charging.ChargeVoltage.Phase3:
   unit: V
   description: Current AC charging voltage (rms) at inlet for Phase 3.
 
-Charging.Power:
-  datatype: float
-  type: sensor
-  unit: kW
-  description: Instantaneous charging power recorded during a charging event.
-
 Charging.AveragePower:
   datatype: float
   type: sensor
