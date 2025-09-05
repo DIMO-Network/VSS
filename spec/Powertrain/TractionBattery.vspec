@@ -483,7 +483,7 @@ Charging.Power:
   datatype: float
   type: sensor
   unit: kW
-  description: Instantaneous charging power of the last or current charging event.
+  description: Instantaneous charging power recorded during a charging event.
 
 Charging.AveragePower:
   datatype: float
