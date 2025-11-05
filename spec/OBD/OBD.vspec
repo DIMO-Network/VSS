@@ -175,7 +175,7 @@ AirStatus:
 IsPluggedIn:
   datatype: boolean
   type: sensor
-  description: Aftermarket device Plugged in status. 1 = device plugged in, 0 = device unplugged.
+  description: Aftermarket device plugged in status. 1 = device plugged in, 0 = device unplugged.
 
 # OBD supports reporting of up to 8 oxygen sensors
 # PID 13 or PID 1D can be used as bitmasks to define logical location of the sensors
