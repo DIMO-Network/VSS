@@ -172,6 +172,11 @@ AirStatus:
   type: sensor
   description: PID 12 - Secondary air status
 
+IsPluggedIn:
+  datatype: boolean
+  type: sensor
+  description: Aftermarket device plugged in status. 1 = device plugged in, 0 = device unplugged.
+
 # OBD supports reporting of up to 8 oxygen sensors
 # PID 13 or PID 1D can be used as bitmasks to define logical location of the sensors
 # Example 1: PID 13 = 0x11 means that PID 14 and PID 18 shall be present
