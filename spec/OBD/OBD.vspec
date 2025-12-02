@@ -180,7 +180,7 @@ IsPluggedIn:
 IsEngineBlocked:
   datatype: boolean
   type: sensor
-  description: Engine block status, 0 = enigne unblocked, 1 = engine blocked
+  description: Engine block status, 0 = engine unblocked, 1 = engine blocked
 
 # OBD supports reporting of up to 8 oxygen sensors
 # PID 13 or PID 1D can be used as bitmasks to define logical location of the sensors
