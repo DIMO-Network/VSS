@@ -41,7 +41,7 @@ yaml:
 	${TOOLSDIR}/vspec2yaml.py -I ./spec -o overlays/DIMO/dimo.vspec --uuid -u ./spec/units.yaml ./spec/VehicleSignalSpecification.vspec vss_rel_$(VSS_VERSION).yaml
 
 csv:
-	${TOOLSDIR}/vspec2csv.py -I ./spec -vt overlays/DIMO/types.vspec -o overlays/DIMO/dimo.vspec --uuid -u ./spec/units.yaml ./spec/VehicleSignalSpecification.vspec vss_rel_$(VSS_VERSION).csv
+	python ${TOOLSDIR}/vspec2csv.py -I ./spec -vt overlays/DIMO/types.vspec -o overlays/DIMO/dimo.vspec --uuid -u ./spec/units.yaml ./spec/VehicleSignalSpecification.vspec vss_rel_$(VSS_VERSION).csv
 
 ddsidl:
 	${TOOLSDIR}/vspec2ddsidl.py -I ./spec -o overlays/DIMO/dimo.vspec --uuid -u ./spec/units.yaml ./spec/VehicleSignalSpecification.vspec vss_rel_$(VSS_VERSION).idl
