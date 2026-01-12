@@ -23,7 +23,7 @@ Wheelbase:
 #
 Axle:
   instances:
-    - Row[1,2]
+    - Row[1,5]
   type: branch
   description: Axle signals
 
@@ -85,6 +85,13 @@ Axle.SteeringAngle:
   description: Single track two-axle model steering angle.
                Angle according to ISO 8855. Positive = degrees to the left. Negative = degrees to the right.
   comment: Single track two-axle model steering angle refers to the angle that a centrally mounted wheel would have.
+
+Axle.Weight:
+  type: sensor
+  datatype: float
+  unit: kg
+  description: Measured Load on axle row 3.
+
 #
 # Tire attributes
 #
@@ -200,9 +207,67 @@ Brake.PedalPosition:
   unit: percent
   description: Brake pedal position as percent. 0 = Not depressed. 100 = Fully depressed.
 
+Brake.IsPedalPressed:
+  type: sensor
+  datatype: boolean
+  description: Indicates whether the brake pedal is pressed.
+
 Brake.IsDriverEmergencyBrakingDetected:
   datatype: boolean
   type: sensor
   description: Indicates if emergency braking initiated by driver is detected.
                True = Emergency braking detected. False = Emergency braking not detected.
   comment: Detection of emergency braking can trigger Emergency Brake Assist (EBA) to engage.
+
+#
+# Brake; Cicuit
+#
+
+Brake.Circuit1:
+  type: branch
+  description: Service brake circuit or reservoir #1.
+
+Brake.Circuit1.PressurePrimary:
+  datatype: float
+  type: sensor
+  unit: kPa
+  description: Pneumatic pressure in the service brake circuit or reservoir #1 (FMS / J1939 SPN 1087).
+
+Brake.Circuit2:
+  type: branch
+  description: Service brake circuit or reservoir #2.
+
+Brake.Circuit2.PressurePrimary:
+  datatype: float
+  type: sensor
+  unit: kPa
+  description: Pneumatic pressure in the service brake circuit or reservoir #2 (FMS / J1939 SPN 1088).
+
+#
+# Brake; ABS
+#
+
+Brake.ABS:
+  type: branch
+  description: Anti-lock Braking System (ABS) related signals.
+
+Brake.ABS.IsWarningOn:
+  datatype: boolean
+  type: sensor
+  description: Indicates whether the ABS warning telltale is active (any non-off state).
+
+#
+# TireSystem
+#
+
+TireSystem:
+  type: branch
+  description: Tire system related signals.
+
+TireSystem.IsWarningOn:
+  datatype: boolean
+  type: sensor
+  description: Indicates whether the tire system warning telltale is active
+  comment: >
+    Derived from FMS telltale status (0,1,2,3,7).
+    Severity information is not preserved.

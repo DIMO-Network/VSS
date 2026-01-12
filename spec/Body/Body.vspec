@@ -187,6 +187,11 @@ Lights.IsHighBeamSwitchOn:
   comment: This signal indicates the status of the switch and does not indicate if low or high beam actually are on.
            That typically depends on vehicle logic and other signals like Lights.LightSwitch and Vehicle.LowVoltageSystemState.
 
+Lights.IsAirbagWarningOn:
+  datatype: boolean
+  type: sensor
+  description: Indicates whether the airbag/SRS warning telltale is active.
+
 Lights.Beam:
   type: branch
   instances: ["Low","High"]

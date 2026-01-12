@@ -229,6 +229,12 @@ Torque:
   comment: During engine breaking the engine delivers a negative torque to the transmission.
            This negative torque shall be ignored, instead 0 shall be reported.
 
+TorquePercent:
+  datatype: float
+  type: sensor
+  unit: percent
+  description: Actual engine output torque as a percentage of reference engine torque (FMS / J1939 parameter SPN 513).
+
 #
 # Diesel Exhaust Fluid
 #

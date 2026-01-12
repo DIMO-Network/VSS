@@ -145,7 +145,7 @@ IsWindowChildLockEngaged:
 Seat:
   type: branch
   instances:
-    - Row[1,2]
+    - Row[1,3]
     - ["DriverSide","Middle","PassengerSide"]
   description: All seats.
 #include SingleSeat.vspec Seat

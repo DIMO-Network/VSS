@@ -158,3 +158,39 @@ TorqueDistribution:
   max: 100
   description: Torque distribution between front and rear axle in percent.
                -100% = Full torque to front axle, 0% = 50:50 Front/Rear, 100% = Full torque to rear axle.
+#
+# Retarder
+#
+
+Retarder:
+  type: branch
+  description: Transmission retarder system signals.
+
+Retarder.TorqueMode:
+  datatype: uint8
+  type: sensor
+  description: Active engine torque mode.
+  comment: >
+    FMS parameter SPN 900.
+    0 = Low idle governor / no request (default mode)
+    1 = Accelerator pedal / operator selection
+    2 = Cruise control
+    3 = PTO governor
+    4 = Road speed governor
+    5 = ASR control
+    6 = Transmission control
+    7 = ABS control
+    8 = Torque limiting
+    9 = High speed governor
+    10 = Braking system
+    11 = Remote accelerator
+    12 = Service procedure
+    13 = Not defined
+    14 = Other
+    15 = Not available
+
+Retarder.ActualTorque:
+  type: sensor
+  datatype: float
+  unit: percent
+  description: Actual retarder torque as a percentage (FMS / J1939 SPN 520).
