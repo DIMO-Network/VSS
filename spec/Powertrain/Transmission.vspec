@@ -64,7 +64,7 @@ CurrentGear:
 SelectedGear:
   datatype: int8
   type: actuator
-  description: The selected gear. 0=Neutral, 1/2/..=Forward, -1/-2/..=Reverse, 126=Park, 127=Drive.
+  description: The selected gear. 0=Neutral, 1/2/..=Forward, -1/-2/..=Reverse, 126=Park.
 
 IsParkLockEngaged:
   datatype: boolean
@@ -167,27 +167,12 @@ Retarder:
   description: Transmission retarder system signals.
 
 Retarder.TorqueMode:
-  datatype: uint8
-  type: sensor
+  datatype: string
+  type: attribute
+  allowed: ['LOW IDLE GOVERNOR', 'ACCELERATOR PEDAL', 'CRUISE CONTROL', 'PTO GOVERNOR', 'ROAD STATE GOVERNOR',
+  'ASR CONTROL', 'TRANSMISSION CONTROL', 'ABS CONTROL', 'TORQUE LIMITING', 'HIGH SPEED GOVERNOR',
+  'BRAKING SYSTER', 'REMOTE ACCELERATOR', 'SERVICE PROCEDURE', 'NOT DEFINED', 'OTHER', 'NOT AVAILABLE']
   description: Active engine torque mode.
-  comment: >
-    FMS parameter SPN 900.
-    0 = Low idle governor / no request (default mode)
-    1 = Accelerator pedal / operator selection
-    2 = Cruise control
-    3 = PTO governor
-    4 = Road speed governor
-    5 = ASR control
-    6 = Transmission control
-    7 = ABS control
-    8 = Torque limiting
-    9 = High speed governor
-    10 = Braking system
-    11 = Remote accelerator
-    12 = Service procedure
-    13 = Not defined
-    14 = Other
-    15 = Not available
 
 Retarder.ActualTorque:
   type: sensor

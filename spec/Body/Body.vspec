@@ -160,6 +160,20 @@ Windshield.WasherFluid.Level:
   type: sensor
   description: Washer fluid level as a percent. 0 = Empty. 100 = Full.
 
+#
+# Lock
+#
+
+Lock:
+  type: branch
+  description: Central locking system of the vehicle.
+
+Lock.IsLocked:
+  type: sensor
+  datatype: boolean
+  description: Indicates whether the vehicle is locked via the central locking system. True = vehicle locked. False = vehicle unlocked.
+
+
 ##
 #  Lights definition
 ##

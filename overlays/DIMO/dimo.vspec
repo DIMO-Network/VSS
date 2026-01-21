@@ -93,3 +93,8 @@ Vehicle.Powertrain.TractionBattery.Charging.Power:
   type: sensor
   unit: kW
   description: Instantaneous charging power recorded during a charging event.
+
+Vehicle.Powertrain.Transmission.IsClutchSwitchOperated:
+  type: sensor
+  datatype: boolean
+  description: Indicates if the Clutch switch is operated, so engine and transmission are partially or fully decoupled. False = Clutch switch not operated. True = Clutch switch operated.
