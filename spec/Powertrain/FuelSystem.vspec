@@ -116,3 +116,9 @@ IsFuelPortFlapOpen:
   datatype: boolean
   type: actuator
   description: Status of the fuel port flap(s). True if at least one is open.
+
+AccumulatedConsumption:
+  datatype: float
+  type: sensor
+  unit: l
+  description: Accumulated fuel consumption (totalized) reported by the vehicle (FMS SPN 250).
