@@ -23,3 +23,12 @@ IsConnectivityAvailable:
   comment: This signal can be used by onboard vehicle services to decide what features that
            shall be offered to the driver, for example disable the 'check for update' button if vehicle does
            not have connectivity.
+
+Connectivity.Cellular:
+  type: branch
+  description: Cellular network connectivity and status information.
+
+Connectivity.Cellular.IsJammingDetected:
+  type: sensor
+  datatype: boolean
+  description: Indicates whether cellular radio signal jamming or interference is detected that prevents normal communication.
