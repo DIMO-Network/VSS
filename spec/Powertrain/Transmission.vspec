@@ -51,6 +51,20 @@ TravelledDistance:
   description: Odometer reading, total distance travelled during the lifetime of the transmission.
 
 #
+# Actual Gear
+#
+
+ActualGear:
+  type: sensor
+  datatype: int8
+  description: Actual transmission gear currently engaged. 0 = neutral, 1-15 = gear number.
+
+ActualGearRatio:
+  type: sensor
+  datatype: float
+  description: Actual transmission gear ratio.
+
+#
 # Current gear
 #
 CurrentGear:
